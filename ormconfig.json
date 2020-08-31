@@ -1,0 +1,17 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "docker",
+  "database": "SOLID_teste",
+  "entities": [
+    "src/repositories/implementations/tables/entity/*ts"
+  ],
+  "migrations": [
+    "src/repositories/implementations/tables/migration/*ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/repositories/implementations/tables/migration"
+  }
+}
